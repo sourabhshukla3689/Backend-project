@@ -20,10 +20,10 @@ const subTodoSchema = new mongoose.Schema({
     subTodo:[
         {
             type: mongoose.Schema.Types.ObjectId,
-            ref: 'subTodo'
-        }
-    ]
+            ref: 'SubTodo'
+        },
+    ],
     
 },{timestamps: true});
 
-export const SubTodo = mongoose.model('SubTodo', subTodoSchema);
+export const Todo = mongoose.model('Todo', subTodoSchema);
